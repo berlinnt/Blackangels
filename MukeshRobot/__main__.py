@@ -995,9 +995,9 @@ def main():
                 caption=f"""
 ✨ㅤ{BOT_NAME} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ.
 ━━━━━━━━━━━━━
-➤ ᴅᴇᴠᴇʟᴏᴘᴇʀ : 
-➤ ᴍʏ ʜᴏᴍᴇ  :
-➤ sᴜᴘᴘᴏʀᴛ   :
+➤ ᴅᴇᴠᴇʟᴏᴘᴇʀ : [ʙᴇʀʟɪɴ](tg://user?id=484576504)
+➤ ᴍʏ ʜᴏᴍᴇ  : [ᴀʟʟɴɪɢʜᴛ](https://t.me/allnightarea
+➤ sᴜᴘᴘᴏʀᴛ   : [sᴜᴘᴘᴏʀᴛ](https://t.me/blackangelsmusic)
 ━━━━━━━━━━━━━
 """,reply_markup=x,
                 parse_mode=ParseMode.MARKDOWN,
