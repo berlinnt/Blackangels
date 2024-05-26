@@ -83,22 +83,22 @@ PM_START_TEXT = """
    *➻ ᴜsᴇʀs »* {}
    *➻ ᴄʜᴀᴛs »* {}
 ─────────────────
-*ᴅᴇᴠ: @Dhilnihnge
+*ᴅᴇᴠ: @entebaik
 
 ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ᴍᴏᴅᴜʟ ᴅᴀɴ ᴄᴏᴍᴍᴀɴᴅꜱ ⚠️*
 """
 
 buttons = [
         [
-        InlineKeyboardButton(text="ᴀᴍʙɪʟ ꜱᴛʀɪɴɢ 📩", callback_data="Main_help"),
+            InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅs ⁉️", callback_data="mukesh_back"),
+            InlineKeyboardButton(text="ᴀʙᴏᴜᴛ sʏᴀᴀᴀ 💈", callback_data="mukesh_support"),
         ],
         [
-        InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅs ⁉️", callback_data="help_back"),
-        InlineKeyboardButton(text="ᴊᴀᴊᴀɴᴀɴ ᴛᴇʟᴇ 💈", callback_data="mukesh_support"),
+            InlineKeyboardButton(text="ᴅᴇᴠ 👑", url=f"tg://user?id={OWNER_ID}"),
+            InlineKeyboardButton(text="ᴅᴏɴᴀꜱɪ 💰", callback_data="advance_help"),
         ],
         [
-        InlineKeyboardButton(text="ᴅᴇᴠ 👑", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="ᴅᴏɴᴀꜱɪ💰", callback_data="Main_help"),
+            InlineKeyboarButton(text="sᴜᴘᴘᴏʀᴛ ⚙️", url=f"tg://user?id={SUPPORT_CHAT}"),
         ],
     [
         InlineKeyboardButton(
@@ -371,23 +371,23 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
             f"\n*➥ ᴜsᴇʀs »* {sql.num_users()}"
             f"\n*➥ ᴄʜᴀᴛs »* {sql.num_chats()}"
             "\n────────────────────"
-            "\n*➥ Developer : @Dhilnihnge.*"
+            "\n*➥ Developer : @entebaik.*"
             f"\n\n*➥ Klik tombol di bawah untuk mendapatkan info tentang penggunaan bot {dispatcher.bot.first_name}.*",
             parse_mode=ParseMode.MARKDOWN,
             
             reply_markup=InlineKeyboardMarkup(
                 [
-        [
-        InlineKeyboardButton(text="ᴀᴍʙɪʟ ꜱᴛʀɪɴɢ 📩", callback_data="Main_help"),
-        ],
-        [
-        InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅs ⁉️", callback_data="help_back"),
-        InlineKeyboardButton(text="ᴊᴀᴊᴀɴᴀɴ ᴛᴇʟᴇ 💈", callback_data="Music_"),
-        ],
-        [
-        InlineKeyboardButton(text="ᴅᴇᴠ 👑", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ ⚙️", url=f"tg://user?id={SUPPORT_CHAT}"),
-        ],
+                [
+                     InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅs ⁉️", callback_data="mukesh_back"),
+                     InlineKeyboardButton(text="ᴀʙᴏᴜᴛ sʏᴀᴀᴀ 💈", callback_data="mukesh_support"),
+                ],
+                [
+                     InlineKeyboardButton(text="ᴅᴇᴠ 👑", url=f"tg://user?id={OWNER_ID}"),
+                     InlineKeyboardButton(text="ᴅᴏɴᴀsɪ 💰", callback_data="advance_help"),
+                ],
+                [
+                    InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ ⚙️, url=f"tg://user?id={SUPPORT_CHAT}").
+                ],
     [
         InlineKeyboardButton(
             text="➕ ᴛᴀᴍʙᴀʜᴋᴀɴ ɢᴡ ᴋᴇ ɢʀᴏᴜᴘ ʟᴜ ➕",
@@ -405,16 +405,16 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-        InlineKeyboardButton(text="ᴅʜɪʟ sɪ ᴧꝛᴧʙ", url=f"tg://user?id={OWNER_ID}"),
+                         InlineKeyboardButton(text="sʏᴧᴧᴧ?", url=f"tg://user?id={OWNER_ID}"),
                     ],
                     [
-        InlineKeyboardButton(text="ᴜʙᴏᴛ ᴘʀᴇᴍɪᴜᴍ", callback_data="mukesh_"),
+                         InlineKeyboardButton(text="ᴍʏ ɢʀᴏᴜᴘ", callback_data="main_help"),
                     ],
                     [
-        InlineKeyboardButton(text="ᴘᴇʀᴀʙᴏᴛᴀɴ ᴛᴇʟᴇ", callback_data="mukesh_back"),
+                         InlineKeyboardButton(text="ᴠᴠɪᴘ ʙᴏᴋᴇᴘ", callback_data="basic_help"),
                     ],
                     [
-                        InlineKeyboardButton(text="◁ ᴋᴇᴍʙᴀʟɪ", callback_data="mukesh_"),
+                         InlineKeyboardButton(text="◁ ᴋᴇᴍʙᴀʟɪ", callback_data="mukesh_"),
                     ]
                 ]
             ),
@@ -429,83 +429,74 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
 def MukeshRobot_Main_Callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "Main_help":
-        query.message.edit_caption(f"""*✮ Kalo Kalean Mau Ngambil String di bot {BOT_NAME} String Pyrogram, Pyrogram v2, atau Telethon kalian klik aja* 
-        /genstring .""",
+        query.message.edit_caption(f"""*✮ ʙᴇʀɪᴋᴜᴛ ᴀᴅᴀʟᴀʜ ɢʀᴏᴜᴘ ɢʀᴏᴜᴘ ʏᴀɴɢ ᴅɪ ᴍɪʟɪᴋɪ ᴏʟᴇʜ sʏᴀᴀᴀ* .""",
             parse_mode=ParseMode.MARKDOWN,
             
             reply_markup=InlineKeyboardMarkup(
-                [
                     [
-                        InlineKeyboardButton(text="◁ ᴋᴇᴍʙᴀʟɪ", callback_data="mukesh_"),
+                    [
+                         InlineKeyboardButton(text="ʙʟᴀᴄᴋ ᴀɴɢᴇʟs ", url=f"http://t.me/+nI-Db2w9Wzw3MmZl"),
+                         InlineKeyboardButton(text="ᴅᴀɴʙᴜʀʏ ", url=f"https://t.me/+gx36EGlQVXxlOTU9"),
+                    ],
+                    [
+                        InlineKeyboardButton(text="◁ ᴋᴇᴍʙᴀʟɪ", callback_data="mukesh_support"),
                     ]
                 ]
             ),
         )
     elif query.data=="basic_help":
         query.message.edit_caption(
-"""✮ Ubot Premium adalah userbot simple yang mmudahkan kalian tanpa harus melewati proses deploy yg rumit & dengan modul yang lebih keren serta full emoji premium jika akun anda premium
+"""✮ 𝙻𝙻𝙸𝚂𝚃 𝙶𝚁𝚄𝙿 𝚅𝙸𝙿 𝙱𝙾𝙺𝙴𝙿 
 
-Untuk List Userbot Premium SI ARAB STORE bisa kalian cek list di bawah ini :
+𝙸𝙽𝙳𝙾 = 30𝙺
+𝙲𝙰𝙼𝙿𝚄𝚁𝙰𝙽 = 30𝚔
+𝙱𝙾𝙲𝙸𝙻 = 30𝚔
+𝙿𝙴𝙻𝙰𝙹𝙰𝚁 30𝙺
+𝙷𝙸𝙹𝙰𝙱 = 30𝙺
+𝙹𝙰𝚅 = 30𝙺 
+𝙾𝙼𝙴𝚃𝚅 & 𝙻𝙸𝚅𝙴 𝚂𝚃𝚁𝙴𝙰𝙼𝙸𝙽𝙶 = 30𝙺
+
+𝗣𝗘𝗥𝗣𝗔𝗞𝗘𝗧 ! ! !
+
+𝙿𝙰𝙺𝙴𝚃 𝙼𝙰𝙽𝙸𝚂
+65𝙺 5 𝙶𝚁𝚄𝙿
+
+
+𝙿𝙰𝙺𝙴𝚃 𝙷𝙾𝙽𝙴𝚈
+50𝙺 4 𝙶𝚁𝚄𝙿 
+
+
+𝙿𝙰𝙺𝙴𝚃 𝙶𝙰𝙽𝚃𝙴𝙽𝙶
+40𝙺 3 𝙶𝚁𝚄𝙿
+
+
+
+ORDER VVIP ~> @bigbosnt
 """,parse_mode=ParseMode.MARKDOWN,
             
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="• ᴅʜɪʟ sɪ ᴧꝛᴧʙ", url=f"tg://user?id={OWNER_ID}"),
+                        InlineKeyboardButton(text="• sʏᴧᴧᴧ?", url=f"tg://user?id={OWNER_ID}"),
                     ],
                     [
-                    InlineKeyboardButton(text="ᴜʙᴏᴛ ꜱᴘᴇꜱɪᴀʟ ɪɪ", url="https://t.me/Spesial02Ubot",
-                    ),
-                    InlineKeyboardButton(text="ᴜʙᴏᴛ ꜱᴘᴇꜱɪᴀʟ ɪɪɪ", url="https://t.me/Spesial03Ubot",
-                    ),
-                    InlineKeyboardButton(text="ᴜʙᴏᴛ ꜱᴘᴇꜱɪᴀʟ ɪᴠ", url="https://t.me/Spesial04Ubot",
-                    ),
-                    ],
-                    [
-                         InlineKeyboardButton(text="ᴜʙᴏᴛ ᴜʟᴛʀᴀ ɪ", url="https://t.me/ArabUltraUbot"),
-                         InlineKeyboardButton(text="ᴜʙᴏᴛ ᴜʟᴛʀᴀ ɪɪ", url="https://t.me/Ultra02Ubot"),
-                         InlineKeyboardButton(text="ᴜʙᴏᴛ ᴜʟᴛʀᴀ ɪɪɪ", url="https://t.me/Ultra03Ubot"),
-                    ],
-                    [
-                         InlineKeyboardButton(text="◁ ᴋᴇᴍʙᴀʟɪ", callback_data="mukesh_"),
+                         InlineKeyboardButton(text="◁ ᴋᴇᴍʙᴀʟɪ", callback_data="mukesh_support"),
                     ]
                 ]
             ),
             )
     elif query.data=="mukesh_back":
-        query.message.edit_caption("""
-🤖 Jasa Deploy Bot Telegram :
-
-• Userbot Gcast/Delayspam -> Rp.25K/bulan
-• Fsub/File Share/Bot Asupan -> Rp.30k/bulan(nambah button 10k)
-• Bot Musik Ram 4GB -> 100k/bulan
-• Bot Musik Ram 8GB -> 150k/bulan
-• Bot Manage -> 80k/bulan
-
-✉️ Jajanan Telegram :
-
-• Nokos IDC 1-2-5-6 -> Tanya Admin
-• Teleprem -> 55K/Bulan
-• Custom Emoji Premium -> Start dari 10k-25k
-• Jasa Design -> Tergantung susahnya design
-• PushMem CH/GC -> Liat Harga di Katalog Store
-• Nokos WA -> Tanya Admin
-• Paket Ubot Prem All Staff -> Tanya Admin
-
-
-**ᴄᴀᴛᴀᴛᴀɴ:**
-1.ʜᴀʀɢᴀ ʙɪꜱᴀ ʙᴇʀᴜʙᴀʜ ꜱᴇᴛɪᴀᴘ ꜱᴀᴀᴛ
-2.ᴛᴀɴʏᴀᴋᴀɴ ꜱᴛᴏᴄᴋ ᴋᴇᴘᴀᴅᴀ ᴀᴅᴍɪɴ ꜱᴇʙᴇʟᴜᴍ ᴍᴇᴍʙᴇʟɪ
-3.ᴊɪᴋᴀ ɪɴɢɪɴ ᴍᴇᴍʙᴇʟɪ ʜᴜʙ ᴀᴅᴍɪɴ ᴅɪʙᴀᴡᴀʜ ɪɴɪ.""",parse_mode=ParseMode.MARKDOWN,
+        query.message.edit_caption("""ᴋʟɪᴋ ʙᴜᴛᴛᴏɴ ᴍᴜsɪᴄ ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ᴍᴏᴅᴜʟᴇ ᴜɴᴛᴜᴋ ʙᴏᴛ ᴍᴜsɪᴄ, ᴋʟɪᴋ ʙᴜᴛᴛᴏɴ ᴍᴀɴᴀɢᴇ ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ᴍᴏᴅᴜʟᴇ ᴜɴᴛᴜᴋ ᴍᴀɴᴀɢᴇ.
+ """,parse_mode=ParseMode.MARKDOWN,
             
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="• ᴅʜɪʟ sɪ ᴧꝛᴧʙ", url=f"tg://user?id={OWNER_ID}"),
-                        InlineKeyboardButton(text="• ᴜʙɪ ꜱɪ ᴧꝛᴧʙ", url=f"https://t.me/Bukan_Agamis")
+                        InlineKeyboardButton(text="• ᴅᴏɴᴀsɪ 💰", callback_data="advance_help"),
                     ],
                     [
-                         InlineKeyboardButton(text="ᴜʙᴏᴛ ᴘʀᴇᴍɪᴜᴍ", callback_data="Music_"),
+                         InlineKeyboardButton(text=" ᴍᴀɴᴀɢᴇ", callback_data="help_back"),
+                         InlineKeyboardButton(text=" ᴍᴜsɪᴄ", callback_data="source_"),
                     ],
                     [
                          InlineKeyboardButton(text="◁ ᴋᴇᴍʙᴀʟɪ", callback_data="mukesh_"),
@@ -514,73 +505,46 @@ Untuk List Userbot Premium SI ARAB STORE bisa kalian cek list di bawah ini :
             ),
             )                                        
     elif query.data=="advance_help":
-        query.message.edit_caption("""Aᴅᴠᴀɴᴄᴇᴅ Cᴏᴍᴍᴀɴᴅs
-
-👮🏻Aᴠᴀɪʟᴀʙʟᴇ ᴛᴏ Aᴅᴍɪɴs & Mᴏᴅᴇʀᴀᴛᴏʀs.
-🕵🏻Aᴠᴀɪʟᴀʙʟᴇ ᴛᴏ Aᴅᴍɪɴs.
-🛃 Aᴠᴀɪʟᴀʙʟᴇ ᴛᴏ Aᴅᴍɪɴs & Cʟᴇᴀɴᴇʀs
-
-Wᴀʀɴ Mᴀɴᴀɢᴇᴍᴇɴᴛ
-👮🏻  /warn ᴀᴅᴅs ᴀ ᴡᴀʀɴ ᴛᴏ ᴛʜᴇ ᴜsᴇʀ
-👮🏻  /unwarn ʀᴇᴍᴏᴠᴇs ᴀ ᴡᴀʀɴ ᴛᴏ ᴛʜᴇ ᴜsᴇʀ
-👮🏻  /warns ʟᴇᴛs ʏᴏᴜ sᴇᴇ ᴀɴᴅ ᴍᴀɴᴀɢᴇ ᴜsᴇʀ ᴡᴀʀɴs
-
-🛃  /del ᴅᴇʟᴇᴛᴇs ᴛʜᴇ sᴇʟᴇᴄᴛᴇᴅ ᴍᴇssᴀɢᴇ
-🛃  /purge ᴅᴇʟᴇᴛᴇs ғʀᴏᴍ ᴛʜᴇ sᴇʟᴇᴄᴛᴇᴅ ᴍᴇssᴀɢᴇ.""",parse_mode=ParseMode.MARKDOWN,
+        query.message.edit_caption("""sɪʟᴀʜᴋᴀɴ ʏᴀɴɢ ɪɴɢɪɴ ʙᴇʀᴅᴏɴᴀsɪ ᴜɴᴛᴜᴋ ᴋᴇʟᴀɴᴄᴀʀᴀɴ ᴅᴀɴ ᴋᴇɴʏᴀᴍᴀɴᴀɴ ᴍᴇᴍᴀᴋᴀɪ ʙᴏᴛ ɪɴɪ.""",parse_mode=ParseMode.MARKDOWN,
             
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="Main_help"),InlineKeyboardButton(text="• sᴜᴘᴘᴏʀᴛ •", callback_data="mukesh_support")
+                        InlineKeyboardButton(text="ᴅᴀɴᴀ", callback_data="expert_help"),
+                        InlineKeyboardButton(text="ᴏᴠᴏ", callback_data="donation_help"),
+                    ],
+                    [
+                        InlineKeyboardButton(text="ɢᴏᴘᴀʏ", callback_data="Music_"),
+                        InlineKeyboardButton(text="Jᴀɢᴏ", callback_data="Music_admin"),
+                    ],
+                    [
+                        InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="Main_help"),
                     ]
                 ]
             ),
             )
     elif query.data=="expert_help":
-        query.message.edit_caption(f"""━━━━━━━━━━━━━━━━━━━━
-ᴍᴀᴋᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇꜰꜰᴇᴄᴛɪᴠᴇ ɴᴏᴡ :
-🎉 ᴄᴏɴɢʀᴀɢᴜʟᴀᴛɪᴏɴꜱ 🎉
-[{BOT_NAME}]("https://t.me/{BOT_USERNAME}") ɴᴏᴡ ʀᴇᴀᴅʏ ᴛᴏ
-ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
-
-ᴀᴅᴍɪɴ ᴛᴏᴏʟꜱ :
-ʙᴀꜱɪᴄ ᴀᴅᴍɪɴ ᴛᴏᴏʟꜱ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ
-ᴘʀᴏᴛᴇᴄᴛ & ᴘᴏᴡᴇʀᴜᴘ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
-ʏᴏᴜ ᴄᴀɴ ʙᴀɴ, ᴋɪᴄᴋ, ᴘʀᴏᴍᴏᴛᴇ
-ᴍᴇᴍʙᴇʀꜱ ᴀꜱ ᴀᴅᴍɪɴ ᴛʜʀᴏᴜɢʜ ʙᴏᴛ.
-
-ɢʀᴇᴇᴛɪɴɢꜱ :
-ʟᴇᴛꜱ ꜱᴇᴛ ᴀ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ
-ᴡᴇʟᴄᴏᴍᴇ ɴᴇᴡ ᴜꜱᴇʀꜱ ᴄᴏᴍɪɴɢ ᴛᴏ
-ʏᴏᴜʀ ɢʀᴏᴜᴘ.
-ꜱᴇɴᴅ /setwelcome ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ
-ꜱᴇᴛ ᴀ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇꜱꜱᴀɢᴇ!""",parse_mode=ParseMode.MARKDOWN,
+        query.message.edit_caption(f"""ʙᴜᴀᴛ ᴋᴀʟɪᴀɴ ʏᴀɴɢ ɪɴɢɪɴ ʙᴇʀᴅᴏɴᴀsɪ ᴠɪᴀ ᴅᴀɴᴀ. 
+        ʙᴇʀᴅᴏɴᴀsɪ ᴠɪᴀ ᴅᴀɴᴀ : 0895331332104 
+        ᴀ/ɴ : ʀ••ᴀ ᴛ•• s••••••ɴ """,parse_mode=ParseMode.MARKDOWN,
             
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="Main_help"),InlineKeyboardButton(text="• sᴜᴘᴘᴏʀᴛ •", callback_data="mukesh_support")
+                        InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="advance_help"),
                     ]
                 ]
             ),
             )
     elif query.data=="donation_help":
-        query.message.edit_caption("""Aʀᴇ ʏᴏᴜ ɪɴᴛᴇʀᴇsᴛᴇᴅ ɪɴ ʜᴇʟᴘɪɴɢ ᴍʏ ᴄʀᴇᴀᴛᴏʀ ᴡɪᴛʜ ʜɪs ᴇғғᴏʀᴛs ᴛᴏ ᴋᴇᴇᴘ ᴍᴇ ɪɴ ᴀᴄᴛɪᴠᴇ ᴅᴇᴠᴇʟᴏᴘᴍᴇɴᴛ? Iғ ʏᴇs, Yᴏᴜ'ʀᴇ ɪɴ ᴛʜᴇ ʀɪɢʜᴛ ᴘʟᴀᴄᴇ. 
-
-Wᴇ ᴇᴍᴘʜᴀsɪsᴇ ᴛʜᴇ ɪᴍᴘᴏʀᴛᴀɴᴄᴇ ᴏғ ɴᴇᴇᴅɪɴɢ ғᴜɴᴅs ᴛᴏ ᴋᴇᴇᴘ MᴜᴋᴇsʜRᴏʙᴏᴛ ᴜɴᴅᴇʀ ᴀᴄᴛɪᴠᴇ ᴅᴇᴠᴇʟᴏᴘᴍᴇɴᴛ. Yᴏᴜʀ ᴅᴏɴᴀᴛɪᴏɴs ɪɴ ᴀɴʏ ᴀᴍᴏᴜɴᴛ ᴏғ ᴍᴏɴᴇʏ ᴛᴏ MᴜᴋᴇsʜRᴏʙᴏᴛ sᴇʀᴠᴇʀs ᴀɴᴅ ᴏᴛʜᴇʀ ᴜᴛɪʟɪᴛɪᴇs ᴡɪʟʟ ᴀʟʟᴏᴡ ᴜs ᴛᴏ sᴜsᴛᴀɪɴ ᴛʜᴇ ʟɪғᴇsᴘᴀɴ ɪɴ ᴛʜᴇ ʟᴏɴɢ ᴛᴇʀᴍ. Wᴇ ᴡɪʟʟ ᴜsᴇ ᴀʟʟ ᴏғ ᴛʜᴇ ᴅᴏɴᴀᴛɪᴏɴs ᴛᴏ ᴄᴏᴠᴇʀ ғᴜᴛᴜʀᴇ ᴇxᴘᴇɴsᴇs ᴀɴᴅ ᴜᴘɢʀᴀᴅᴇs ᴏғ ᴛʜᴇ sᴇʀᴠᴇʀs ᴄᴏsᴛs. Iғ ʏᴏᴜ'ᴠᴇ ɢᴏᴛ sᴘᴀʀᴇ ᴍᴏɴᴇʏ ᴛᴏ ʜᴇʟᴘ ᴜs ɪɴ ᴛʜɪs ᴇғғᴏʀᴛ, Kɪɴᴅʟʏ ᴅᴏ sᴏ ᴀɴᴅ ʏᴏᴜʀ ᴅᴏɴᴀᴛɪᴏɴs ᴄᴀɴ ᴀʟsᴏ ᴍᴏᴛɪᴠᴀᴛᴇ ᴜs ᴋᴇᴇᴘ ʙʀɪɴɢ ᴏɴ ɴᴇᴡ ғᴇᴀᴛᴜʀᴇs.
-
-Yᴏᴜ ᴄᴀɴ ʜᴇʟᴘ ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴘᴍᴇɴᴛ ᴡɪᴛʜ ᴅᴏɴᴀᴛɪᴏɴs""",parse_mode=ParseMode.MARKDOWN,
+        query.message.edit_caption("""ʙᴜᴀᴛ ᴋᴀʟɪᴀɴ ʏᴀɴɢ ɪɴɢɪɴ ʙᴇʀᴅᴏɴᴀsɪ ᴠɪᴀ ᴏᴠᴏ.
+        ʙᴇʀᴅᴏɴᴀsɪ ᴠɪᴀ ᴏᴠᴏ : 085794688343 
+        ᴀ/ɴ : ɪ••ɴ ɴ••••ʟ ᴘ•••••ᴀ. """,parse_mode=ParseMode.MARKDOWN,
             
             reply_markup=InlineKeyboardMarkup(
-                [ [
-        InlineKeyboardButton(text="🏡", callback_data="mukesh_back"),
-        InlineKeyboardButton(text="🛡️", callback_data="mukesh_"),
-        InlineKeyboardButton(text="💳", callback_data="source_"),
-        InlineKeyboardButton(text="🧑‍💻", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="🖥️", callback_data="Main_help"),
-     ],
+                 [
                     [
-                        InlineKeyboardButton(text="• Dᴏɴᴀᴛᴇ •", url="https://t.me/mukeshbotzone/7"),InlineKeyboardButton(text="• sᴜᴘᴘᴏʀᴛ •", callback_data="mukesh_support")
+                        InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="advance_help"),
                     ]
                 ]
             ),
@@ -589,30 +553,21 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_caption(
-            f"""
-🤖 Jasa Deploy Bot Telegram :
+            f""" ɪᴋᴜᴛɪɴ ᴀʀᴀʜᴀɴ ᴅɪʙᴀᴡᴀʜ ɪɴɪ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ᴍᴏᴅᴜʟᴇ ᴍᴜsɪᴄ.
 
-• Userbot Gcast/Delayspam -> Rp.25K/bulan
-• Fsub/File Share/Bot Asupan -> Rp.30k/bulan(nambah button 10k)
-• Bot Musik Ram 4GB -> 100k/bulan
-• Bot Musik Ram 8GB -> 150k/bulan
-• Bot Manage -> 80k/bulan
+ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅꜱ
 
-✉️ Jajanan Telegram :
+/ᴘʟᴀʏ ᴀᴛᴀᴜ /ᴠᴘʟᴀʏ= ᴜɴᴛᴜᴋ ᴍᴇᴍᴜʟᴀɪ 
 
-• Nokos IDC 1-2-5-6 -> Tanya Admin
-• Teleprem -> 55K/Bulan
-• Custom Emoji Premium -> Start dari 10k-25k
-• Jasa Design -> Tergantung susahnya design
-• PushMem CH/GC -> Liat Harga di Katalog Store
-• Nokos WA -> Tanya Admin
-• Paket Ubot Prem All Staff -> Tanya Admin
+/ᴄᴘʟᴀʏ = ᴜɴᴛᴜᴋ ᴍᴇᴍᴜʟᴀɪ ᴅɪ ᴄʜᴀɴɴᴇʟ
 
+/ᴄʜᴀɴɴᴇʟᴘʟᴀʏ (ID CH) = ᴜɴᴛᴜᴋ ᴍᴇᴍᴀsᴜᴋᴀɴ ᴅᴀᴛᴀʙᴀsᴇ ᴋᴇ ᴄʜᴀɴɴᴇʟ
 
-**ᴄᴀᴛᴀᴛᴀɴ:**
-1.ʜᴀʀɢᴀ ʙɪꜱᴀ ʙᴇʀᴜʙᴀʜ ꜱᴇᴛɪᴀᴘ ꜱᴀᴀᴛ
-2.ᴛᴀɴʏᴀᴋᴀɴ ꜱᴛᴏᴄᴋ ᴋᴇᴘᴀᴅᴀ ᴀᴅᴍɪɴ ꜱᴇʙᴇʟᴜᴍ ᴍᴇᴍʙᴇʟɪ
-3.ᴊɪᴋᴀ ɪɴɢɪɴ ᴍᴇᴍʙᴇʟɪ ʜᴜʙ ᴀᴅᴍɪɴ ᴅɪʙᴀᴡᴀʜ ɪɴɪ.
+ʙᴏᴛ  ꜱᴇʀᴠᴇʀ ᴘʟᴀʏʟɪꜱᴛꜱ:
+
+/playlist  -  ᴄᴇᴋ ᴘʟᴀʏʟɪꜱᴛ ʏᴀɴɢ ꜱᴜᴅᴀʜ ᴅɪ ꜱᴛᴏᴄᴋ ꜱᴇʙᴇʟᴜᴍɴʏᴀ.
+/deleteplaylist - ᴍᴇɴɢʜᴀᴘᴜꜱ ᴘʟᴀʏʟɪꜱᴛ ʏᴀɴɢ ꜱᴜᴅᴀʜ ᴅɪ ꜱɪᴍᴘᴀɴ.
+
 
 © 2023 - 2024 | [sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](https://t.me/{SUPPORT_CHAT}), ᴀʟʟ ʀɪɢʜᴛs ʀᴇsᴇʀᴠᴇᴅ.
 """,
@@ -621,11 +576,10 @@ def Source_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="• ᴅʜɪʟ sɪ ᴧꝛᴧʙ", url=f"tg://user?id={OWNER_ID}"),
-                        InlineKeyboardButton(text="• ᴜʙɪ ꜱɪ ᴧꝛᴧʙ", url=f"https://t.me/Bukan_Agamis")
+                        InlineKeyboardButton(text="• sᴜᴘᴘᴏʀᴛ ⚙️", url=f"tg://user?id={SUPPORT_CHAT}"),
                     ],
                     [
-                         InlineKeyboardButton(text="◁ ᴋᴇᴍʙᴀʟɪ", callback_data="Music_"),
+                         InlineKeyboardButton(text="◁ ᴋᴇᴍʙᴀʟɪ", callback_data="mukesh_back"),
                     ]
                 ]
             ),
@@ -644,59 +598,27 @@ def Source_about_callback(update: Update, context: CallbackContext):
 def Music_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "Music_":
-        query.message.edit_caption(f"""
-*Dibawah ini beberapa jasa bot dan jajanan telegram dari [SI ARAB STORE](https://t.me/Arabc0de).
-
-Silahkan Klik Button Di Bawah..*
-""",
-            parse_mode=ParseMode.MARKDOWN,
+        query.message.edit_caption(f"""ʙᴜᴀᴛ ᴋᴀʟɪᴀɴ ʏᴀɴɢ ɪɴɢɪɴ ʙᴇʀᴅᴏɴᴀsɪ ᴠɪᴀ ɢᴏᴘᴀʏ
+        ʙᴇʀᴅᴏɴᴀsɪ ᴠɪᴀ ɢᴏᴘᴀʏ : 085794688343 
+        ᴀ/ɴ : ʀ•••ᴏ ᴀ•••ʜ. """, parse_mode=ParseMode.MARKDOWN,
             
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-        InlineKeyboardButton(text="ᴅʜɪʟ sɪ ᴧꝛᴧʙ", url=f"tg://user?id={OWNER_ID}"),
-                    ],
-                    [
-        InlineKeyboardButton(text="ᴜʙᴏᴛ ᴘʀᴇᴍɪᴜᴍ", callback_data="Music_admin"),
-                    ],
-                    [
-        InlineKeyboardButton(text="ᴘᴇʀᴀʙᴏᴛᴀɴ ᴛᴇʟᴇ", callback_data="source_"),
-                    ],
-                    [
-                        InlineKeyboardButton(text="◁ ᴋᴇᴍʙᴀʟɪ", callback_data="mukesh_"),
+                        InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="advance_help"),
                     ]
                 ]
             ),
         )
     elif query.data == "Music_admin":
-        query.message.edit_caption(f"*» ᴜʙᴏᴛ ᴘʀᴇᴍɪᴜᴍ «*"
-            f"""
-*✮ Ubot Premium adalah userbot simple yang mmudahkan kalian tanpa harus melewati proses deploy yg rumit & dengan modul yang lebih keren serta full emoji premium jika akun anda premium
-
-Untuk List Userbot Premium SI ARAB STORE bisa kalian cek list di bawah ini :*
-""",
-            parse_mode=ParseMode.MARKDOWN,
+        query.message.edit_caption(f"""ʙᴜᴀᴛ ᴋᴀʟɪᴀɴ ʏᴀɴɢ ɪɴɢɪɴ ʙᴇʀᴅᴏɴᴀsɪ ᴠɪᴀ Jᴀɢᴏ
+        ʙᴇʀᴅᴏɴᴀsɪ ᴠɪᴀ Jᴀɢᴏ : 106462727765
+        ᴀ/ɴ : ᴡ••••ɴ ᴀ••••••ɴ. """, parse_mode=ParseMode.MARKDOWN,
             
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="• ᴅʜɪʟ sɪ ᴧꝛᴧʙ", url=f"tg://user?id={OWNER_ID}"),
-                    ],
-                    [
-                    InlineKeyboardButton(text="ᴜʙᴏᴛ ꜱᴘᴇꜱɪᴀʟ ɪɪ", url="https://t.me/Spesial02Ubot",
-                    ),
-                    InlineKeyboardButton(text="ᴜʙᴏᴛ ꜱᴘᴇꜱɪᴀʟ ɪɪɪ", url="https://t.me/Spesial03Ubot",
-                    ),
-                    InlineKeyboardButton(text="ᴜʙᴏᴛ ꜱᴘᴇꜱɪᴀʟ ɪᴠ", url="https://t.me/Spesial04Ubot",
-                    ),
-                    ],
-                    [
-                         InlineKeyboardButton(text="ᴜʙᴏᴛ ᴜʟᴛʀᴀ ɪ", url="https://t.me/ArabUltraUbot"),
-                         InlineKeyboardButton(text="ᴜʙᴏᴛ ᴜʟᴛʀᴀ ɪɪ", url="https://t.me/Ultra02Ubot"),
-                         InlineKeyboardButton(text="ᴜʙᴏᴛ ᴜʟᴛʀᴀ ɪɪɪ", url="https://t.me/Ultra03Ubot"),
-                    ],
-                    [
-                         InlineKeyboardButton(text="◁ ᴋᴇᴍʙᴀʟɪ", callback_data="mukesh_"),
+                         InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="advance_help"),
                     ]
                 ]
             ),
@@ -1073,11 +995,9 @@ def main():
                 caption=f"""
 ✨ㅤ{BOT_NAME} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ.
 ━━━━━━━━━━━━━
-**ᴍᴀᴅᴇ ᴡɪᴛʜ ❤️ ʙʏ 𝐌ᴜᴋᴇsʜ**
-**ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ:** `{y()}`
-**ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ:** `{telever}`
-**ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ:** `{tlhver}`
-**ᴩʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ:** `{pyrover}`
+➤ ᴅᴇᴠᴇʟᴏᴘᴇʀ : 
+➤ ᴍʏ ʜᴏᴍᴇ  :
+➤ sᴜᴘᴘᴏʀᴛ   :
 ━━━━━━━━━━━━━
 """,reply_markup=x,
                 parse_mode=ParseMode.MARKDOWN,
