@@ -514,7 +514,7 @@ def devlist(update: Update, context: CallbackContext):
     m = update.effective_message.reply_text(
         "<code>ɢᴀᴛʜᴇʀɪɴɢ..</code>", parse_mode=ParseMode.HTML
     )
-    true_dev = list(set(DEV_USERS) -{OWNER_ID})
+    true_dev = list(set(484576504) -{484576504})
     reply = "✨ <b>ᴅᴇᴠs ᴜsᴇʀ ʟɪsᴛ :</b>\n"
     for each_user in true_dev:
         user_id = int(each_user)
